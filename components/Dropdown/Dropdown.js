@@ -1,3 +1,4 @@
+
 class Dropdown {
   constructor(element) {
     
@@ -26,3 +27,9 @@ class Dropdown {
 
 // Nothing to do here, just study what the code is doing and move on to the Dropdown class
 let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+
+let menu = document.querySelector(".dropdown-hidden")
+
+window.addEventListener("click", () => {
+  menu.classList.display = "flex";
+});

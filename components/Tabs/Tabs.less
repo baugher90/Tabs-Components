@@ -8,7 +8,8 @@
     padding-top: 60px;
   }
   .tabs-item {
-    display: none; 
+    display: none;
+    animation: rotate-in-2-cw 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
     width: 75%;
     .tabs-item-title {
@@ -34,7 +35,9 @@
     color: @white;
     cursor: pointer;
     &:hover {
+     // width: 150px;
       background-color: @lambda-light-red;
+      border: 5px solid @lambda-red;
     }
   }
   .tabs-link-selected {
